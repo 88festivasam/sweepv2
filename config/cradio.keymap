@@ -4,7 +4,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/mouse.h>
 
 / {
     behaviors {
@@ -70,10 +69,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  !       │  L click │ mouse up │ R click  │  %       │   │  ^       │  &       │  *       │  (       │  )       │
-            &trans     &kp LBKT   &kp LBRC   &kp RBRC   &trans         &kp LBKT   &kp LPAR   &kp RPAR   &kp RBKT   &kp BSLH
+            &trans     &trans     &trans     &trans     &trans         &kp LBKT   &kp LPAR   &kp RPAR   &kp RBKT   &kp BSLH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │ Mouse L  │Mouse down│ Mouse r  │  %       │   │  ^       │  &       │  *       │  (       │  )       │
-            &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp under  &kp LBRC   &kp RBRC   &kp LPAR   &kp RPAR
+            &kp EXCL   &trans     &trans     &trans     &kp PRCNT      &kp under  &kp LBRC   &kp RBRC   &kp LPAR   &kp RPAR
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  (       │  )       │
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp under  &kp LBRC   &kp RBRC   &kp LPAR   &kp RPAR
