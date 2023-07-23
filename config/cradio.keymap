@@ -72,7 +72,7 @@
             &trans     &trans     &trans     &trans     &trans         &kp LBKT   &kp LPAR   &kp RPAR   &kp RBKT   &kp BSLH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │ Mouse L  │Mouse down│ Mouse r  │  %       │   │  ^       │  &       │  *       │  (       │  )       │
-            &kp EXCL   &trans     &trans     &trans     &kp PRCNT      &kp under  &kp LBRC   &kp RBRC   &kp LPAR   &kp RPAR
+            &kp EXCL   &trans     &trans     &trans     &kp PRCNT      &kp LBKT  &kp LBRC   &kp RBRC   &kp LPAR   &kp RPAR
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  (       │  )       │
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp under  &kp LBRC   &kp RBRC   &kp LPAR   &kp RPAR
