@@ -58,7 +58,7 @@
             &kp TAB   &kp LEFT   &kp DOWN   &kp RIGHT   &kp C_VOL_UP   &kp_MINUS  &kp N4     &kp N5     &kp N6     &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS LOCK│  HOME    │  DEL     │  END     │  vol down│   │    /     │ 1        │ 2        │ 3        │   .      │
-           &kp CAPS    &kp N7     &kp N8     &kp N9     &kp C_VOL_DN    &kp FSLH  &kp N1     &kp N2     &kp N3    &KP DOT
+           &kp CAPS    &kp N7     &kp N8     &kp N9     &kp C_VOL_DN    &kp FSLH  &kp N1     &kp N2     &kp N3    &kp DOT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &to 0     &kp LALT        &kp N0     &to 2
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
