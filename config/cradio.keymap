@@ -52,10 +52,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ esc      │  F3      │  up      │  F4      │scrolllock│   │ +        │ 7        │ 8        │ 9        │ backspace│
-            &kp ESC    &kp F3     &kp UP     &kp F4    &kp SLCK         &kp_plus  &kp N7    &kp N8    &kp N9     &kp BSPC
+            &kp ESC    &kp F3     &kp UP     &kp F4    &kp SLCK         &kp PLUS  &kp N7    &kp N8    &kp N9     &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ TAB      │  left    │  down    │  right   │ vol up   │   │ -        │ 4        │ 5        │ 6        │  enter   │
-            &kp TAB   &kp LEFT   &kp DOWN   &kp RIGHT   &kp C_VOL_UP   &kp_MINUS  &kp N4     &kp N5     &kp N6     &kp ENTER
+            &kp TAB   &kp LEFT   &kp DOWN   &kp RIGHT   &kp C_VOL_UP   &kp MINUS  &kp N4     &kp N5     &kp N6     &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS LOCK│  HOME    │  DEL     │  END     │  vol down│   │    /     │ 1        │ 2        │ 3        │   .      │
            &kp CAPS    &kp N7     &kp N8     &kp N9     &kp C_VOL_DN    &kp FSLH  &kp N1     &kp N2     &kp N3    &kp DOT
