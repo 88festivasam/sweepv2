@@ -71,8 +71,8 @@
         //│  !       │  @       │ #        │ $        │  %       │   │  ^       │  &       │  *       │  (       │  )       │
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET &kp AMPS   &kp STAR    &kp LPAR   &kp RPAR
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  `       │          │          │          │          │   │          │          │          │  [  {    │  ]  }    │
-            &kp GRAVW   &trans      &trans     &trans     &trans       &trans     &trans     &trans     &kp LBKT   &kp RBKT
+        //│          │          │          │          │          │   │          │          │          │  [  {    │  ]  }    │
+            &kp GRAVE   &trans      &trans     &trans     &trans       &trans     &trans     &trans     &kp LBKT   &kp RBKT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ caps lock│          │          │          │          │   │  \       │          │          │          │          │
             &kp CAPS   &trans     &trans     &trans     &trans         &kp BSLH  &trans     &trans      &trans     &trans
