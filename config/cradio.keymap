@@ -31,14 +31,14 @@
 
     keymap {
         compatible = "zmk,keymap";
-        default_layer {
+        alpha_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ' "      │
-            &kp A      &kp S       &kp D      &kp F     &kp G          &kp H      &kp J       &kp K     &kp L     &mt DQT SQT
+            &kp A      &kp S       &kp D      &kp F     &kp G          &kp H      &kp J       &kp K     &kp L      &kp SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
@@ -48,7 +48,7 @@
             >;
         };
 
-        right_layer {
+        number_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ esc      │  F3      │  up      │  F4      │scrolllock│   │ +        │ 7        │ 8        │ 9        │ backspace│
@@ -57,27 +57,27 @@
         //│ TAB      │  left    │  down    │  right   │ vol up   │   │ -        │ 4        │ 5        │ 6        │  enter   │
             &kp TAB   &kp LEFT   &kp DOWN   &kp RIGHT   &kp C_VOL_UP   &kp MINUS  &kp N4     &kp N5     &kp N6     &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS LOCK│  HOME    │  DEL     │  END     │  vol down│   │    /     │ 1        │ 2        │ 3        │   .      │
-           &kp CAPS    &kp N7     &kp N8     &kp N9     &kp C_VOL_DN    &kp FSLH  &kp N1     &kp N2     &kp N3    &kp DOT
+        //│ SHIFT    │  HOME    │  END     │  DEL     │  vol down│   │    /     │ 1        │ 2        │ 3        │   .      │
+           &sk LSHIFT  &kp HOME   &kp END    &kp DEL    &kp C_VOL_DN    &kp FSLH  &kp N1     &kp N2     &kp N3    &kp DOT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &to 0     &kp LALT        &kp N0     &to 2
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
 
-        left_layer {
+        symbol_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  !       │  L click │ mouse up │ R click  │  %       │   │  ^       │  &       │  *       │  (       │  )       │
-            &trans     &trans     &trans     &trans     &trans         &kp LBKT   &kp LPAR   &kp RPAR   &kp RBKT   &kp BSLH
+        //│  !       │  @       │ #        │ $        │  %       │   │  ^       │  &       │  *       │  (       │  )       │
+            &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET &kp AMPS   &kp STAR    &kp LPAR   &kp RPAR
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  !       │ Mouse L  │Mouse down│ Mouse r  │  %       │   │  ^       │  &       │  *       │  (       │  )       │
-            &kp EXCL   &trans     &trans     &trans     &kp PRCNT      &kp LBKT  &kp LBRC   &kp RBRC   &kp LPAR   &kp RPAR
+        //│  `       │          │          │          │          │   │          │          │          │  [  {    │  ]  }    │
+            &kp GRAVW   &trans      &trans     &trans     &trans       &trans     &trans     &trans     &kp LBKT   &kp RBKT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  (       │  )       │
-            &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp LBKT  &kp LBRC   &kp RBRC   &kp LPAR   &kp RPAR
+        //│ caps lock│          │          │          │          │   │  \       │          │          │          │          │
+            &kp CAPS   &trans     &trans     &trans     &trans         &kp BSLH  &trans     &trans      &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &to 0     &trans         &trans     &to 1
+                                             &to 0     &kp BSPC        &sk RSHIFT   &to 1
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
