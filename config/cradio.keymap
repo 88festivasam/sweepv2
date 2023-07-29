@@ -37,13 +37,13 @@
         //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ' "      │
-            &kp A      &kp S       &kp D      &kp F     &kp G          &kp H      &kp J       &kp K     &kp L      &kp SQT
+        //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ enter    │
+            &kp A      &kp S       &kp D      &kp F     &kp G          &kp H      &kp J       &kp K     &kp L      &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                       &mt LCTRL SPACE  &sk LSHIFT     &kp RGUI   &to 1 
+                                            &sk LSHIFT &mt LCTRL SPACE  &to 1    &kp RGUI    
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -51,16 +51,16 @@
         number_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ esc      │  F3      │  up      │  F4      │scrolllock│   │ +        │ 7        │ 8        │ 9        │ backspace│
-            &kp ESC    &kp F3     &kp UP     &kp F4    &kp SLCK         &kp PLUS  &kp N7    &kp N8    &kp N9     &kp BSPC
+        //│ esc      │  F3      │  up      │  F4      │ lctrl    │   │ mult     │ 7        │ 8        │ 9        │ backspace│
+            &kp ESC    &kp F3     &kp UP     &kp F4     &kp LCTRL      &kp STAR    &kp N7    &kp N8    &kp N9     &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ TAB      │  left    │  down    │  right   │ vol up   │   │ -        │ 4        │ 5        │ 6        │  enter   │
-            &kp TAB   &kp LEFT   &kp DOWN   &kp RIGHT   &kp C_VOL_UP   &kp MINUS  &kp N4     &kp N5     &kp N6     &kp ENTER
+        //│ TAB      │  left    │  down    │  right   │ vol up   │   │ -        │ 4        │ 5        │ 6        │  +       │
+            &kp TAB   &kp LEFT   &kp DOWN   &kp RIGHT   &kp C_VOL_UP   &kp MINUS  &kp N4     &kp N5     &kp N6     &kp PLUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ SHIFT    │  HOME    │  END     │  DEL     │  vol down│   │    /     │ 1        │ 2        │ 3        │   .      │
-           &sk LSHIFT  &kp HOME   &kp END    &kp DEL    &kp C_VOL_DN    &kp FSLH  &kp N1     &kp N2     &kp N3    &kp DOT
+        //│ SHIFT    │  HOME    │  END     │  DEL     │  vol down│   │    /     │ 1        │ 2        │ 3        │   ENTER  │
+           &sk LSHIFT  &kp HOME   &kp END    &kp DEL    &kp C_VOL_DN    &kp FSLH  &kp N1     &kp N2     &kp N3    &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &to 0     &kp LALT        &kp N0     &to 2
+                                             &kp LALT  &to 0           &to 2     &kp N0     
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -68,16 +68,16 @@
         symbol_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  !       │  @       │ #        │ $        │  %       │   │  ^       │  &       │  *       │  (       │  )       │
-            &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET &kp AMPS   &kp STAR    &kp LPAR   &kp RPAR
+        //│  !       │  @       │ #        │ $        │  %       │   │  ^       │  &       │  *       │  \       │ BACKSPACE│
+            &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET &kp AMPS   &kp STAR    
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │          │          │          │  [  {    │  ]  }    │
-            &kp GRAVE   &trans      &trans     &trans     &trans       &trans     &trans     &trans     &kp LBKT   &kp RBKT
+        //│          │   ctrl   │    E     │    lgui  │          │   │   (      │   )      │          │          │  ENTER   │
+            &kp GRAVE   &kp LCTRL  &kp E     &kp LGUI  &trans        &kp LPAR   &kp RPAR     &trans    &trans     &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ caps lock│          │          │          │          │   │  \       │          │          │          │          │
-            &kp CAPS   &trans     &trans     &trans     &trans         &kp BSLH  &trans     &trans      &trans     &trans
+        //│ caps lock│  scroll  │          │          │          │   │  [       │  ]       │          │          │          │
+            &kp CAPS   &kp SLCK   &trans     &trans     &trans         &kp LBKT   &kp RBKT     &trans      &trans    &to 3
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &to 0     &kp BSPC        &sk RSHIFT   &to 1
+                                             &kp BSPC  &to 0           &to 1      &trans     
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -94,7 +94,7 @@
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
             &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
+                                             &trans     &to 0         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
