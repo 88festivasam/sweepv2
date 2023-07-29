@@ -54,13 +54,13 @@
         //│ esc      │  F3      │  up      │  F4      │ lctrl    │   │ mult     │ 7        │ 8        │ 9        │ backspace│
             &kp ESC    &kp F3     &kp UP     &kp F4     &kp LCTRL      &kp STAR    &kp N7    &kp N8    &kp N9     &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ TAB      │  left    │  down    │  right   │ vol up   │   │ -        │ 4        │ 5        │ 6        │  +       │
-            &kp TAB   &kp LEFT   &kp DOWN   &kp RIGHT   &kp C_VOL_UP   &kp MINUS  &kp N4     &kp N5     &kp N6     &kp PLUS
+        //│ TAB      │  left    │  down    │  right   │ page up  │   │ -        │ 4        │ 5        │ 6        │  ENTER   │
+            &kp TAB   &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_UP      &kp MINUS  &kp N4     &kp N5     &kp N6     &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ SHIFT    │  HOME    │  END     │  DEL     │  vol down│   │    /     │ 1        │ 2        │ 3        │   ENTER  │
-           &sk LSHIFT  &kp HOME   &kp END    &kp DEL    &kp C_VOL_DN    &kp FSLH  &kp N1     &kp N2     &kp N3    &kp ENTER
+        //│ SHIFT    │  HOME    │  END     │  DEL     │ page down│   │    /     │ 1        │ 2        │ 3        │   +      │
+           &sk LSHIFT  &kp HOME   &kp END    &kp DEL    &kp PG_DN      &kp FSLH  &kp N1     &kp N2     &kp N3    &kp PLUS
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp LALT  &to 0           &to 2     &kp N0     
+                                             &kp LALT   &to 0          &to 2      &kp N0     
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -71,13 +71,13 @@
         //│  !       │  @       │ #        │ $        │  %       │   │  ^       │  &       │  *       │  \       │ BACKSPACE│
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET &kp AMPS   &kp STAR    &kp BSLH   &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │   ctrl   │    E     │    lgui  │          │   │   (      │   )      │          │          │  ENTER   │
-            &kp GRAVE   &kp LCTRL  &kp E     &kp LGUI  &trans        &kp LPAR   &kp RPAR     &trans    &trans     &kp ENTER
+        //│          │   ctrl   │    E     │    lgui  │ vol up   │   │   (      │   )      │          │          │  ENTER   │
+            &kp GRAVE   &kp LCTRL  &kp E     &kp LGUI  &kp C_VOL_UP       &kp LPAR   &kp RPAR     &trans    &trans     &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ caps lock│  scroll  │          │          │          │   │  [       │  ]       │          │          │          │
-            &kp CAPS   &kp SLCK   &trans     &trans     &trans         &kp LBKT   &kp RBKT     &trans      &trans    &to 3
+        //│ caps lock│  scroll  │          │          │  vol down│   │  [       │  ]       │          │          │          │
+            &kp CAPS   &kp SLCK   &trans     &trans     &kp C_VOL_DN  &kp LBKT   &kp RBKT     &trans      &trans    &to 3
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp BSPC  &to 0           &to 1      &trans     
+                                             &trans     &to 0           &to 2      &trans     
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
