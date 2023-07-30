@@ -7,7 +7,7 @@
 
 &mt {
             tapping-term-ms = <201>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
         };
 
 / {
@@ -82,7 +82,7 @@
         //│ caps lock│  scroll  │          │          │  vol down│   │  [       │  ]       │          │          │          │
             &kp CAPS   &kp SLCK   &trans     &trans     &kp C_VOL_DN  &kp LBKT   &kp RBKT     &trans      &trans    &to 3
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &to 0           &to 2      &trans     
+                                             &sk LSHIFT &to 0           &to 2      &trans     
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -102,6 +102,6 @@
                                              &trans     &to 0         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
-        };
+        };''
     };
 };
