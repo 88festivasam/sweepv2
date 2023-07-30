@@ -17,7 +17,7 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
-        mt: mod_tap {
+        mt: mod_tap_behavior {
             label = "mod_tap";
             compatible = "zmk,behavior-mod-tap";
             #binding-cells = <2>;
