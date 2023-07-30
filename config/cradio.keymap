@@ -18,8 +18,8 @@
             bindings = <&kp>, <&kp>;
         };
         mt: mod_tap {
-            label = "hold_tap";
-            compatible = "zmk,behavior-hold-tap";
+            label = "mod_tap";
+            compatible = "zmk,behavior-mod-tap";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
