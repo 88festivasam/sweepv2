@@ -71,8 +71,8 @@
         //│  !       │  @       │ #        │ $        │  %       │   │  ^       │  &       │  *       │  \       │ BACKSPACE│
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET &kp AMPS   &kp STAR    &kp BSLH   &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │   ctrl   │    E     │    lgui  │ vol up   │   │   (      │   )      │          │          │  ENTER   │
-            &kp GRAVE   &kp LCTRL  &kp E     &kp LGUI  &kp C_VOL_UP       &kp LPAR   &kp RPAR     &trans    &trans     &kp ENTER
+        //│          │   ctrl   │    E     │    lgui  │ vol up   │   │   (      │   )      │          │    '     │  ENTER   │
+            &kp GRAVE   &kp LCTRL  &kp E     &kp LGUI  &kp C_VOL_UP    &kp LPAR   &kp RPAR   &trans    &kp SQT     &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ caps lock│  scroll  │          │          │  vol down│   │  [       │  ]       │          │          │          │
             &kp CAPS   &kp SLCK   &trans     &trans     &kp C_VOL_DN  &kp LBKT   &kp RBKT     &trans      &trans    &to 3
